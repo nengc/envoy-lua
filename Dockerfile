@@ -5,5 +5,5 @@ RUN cd /opt && \
     git clone https://github.com/envoyproxy/envoy.git
     
 RUN cd /opt/envoy && \
-    sudo bazel build //source/exe:envoy-static --jobs 4 --define exported_symbols=enabled
+    sudo bazel build //source/exe:envoy-static --jobs 2 --define exported_symbols=enabled
     
