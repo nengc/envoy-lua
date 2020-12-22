@@ -5,4 +5,4 @@ RUN cd /opt && \
     git clone https://github.com/envoyproxy/envoy.git
     
 RUN cd /opt/envoy && \
-    bazel build --jobs 4 --define exported_symbols=enabled
+    bazel build -c opt //source/exe:envoy-static --jobs 4 --define exported_symbols=enabled
